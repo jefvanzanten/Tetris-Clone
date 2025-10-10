@@ -24,7 +24,7 @@ function App() {
         <div id="app">
             <header />
             <PhaserGame ref={phaserRef} currentActiveScene={currentScene} />
-            <ControlsLayout actionA={() => changeScene()} />
+            <ControlsLayout actionA={() => {}} />
         </div>
     );
 }

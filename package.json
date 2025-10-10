@@ -2,6 +2,7 @@
     "name": "Web Game Template",
     "description": "A Phaser 3 TypeScript project template that demonstrates React communication and uses Vite for bundling.",
     "version": "1.1.0",
+    "homepage": "https://jefvanzanten.github.io/Tetris-Clone",
     "repository": {
         "type": "git",
         "url": "git+https://github.com/phaserjs/template-react-ts.git"
@@ -12,7 +13,6 @@
     "bugs": {
         "url": "https://github.com/phaserjs/template-react-ts/issues"
     },
-    "homepage": "https://github.com/phaserjs/template-react-ts#readme",
     "keywords": [
         "phaser",
         "phaser3",
@@ -27,6 +27,7 @@
         "build-nolog": "vite build --config vite/config.prod.mjs"
     },
     "dependencies": {
+        "gh-pages": "^6.3.0",
         "phaser": "^3.90.0",
         "react": "^19.0.0",
         "react-dom": "^19.0.0"
@@ -40,10 +41,9 @@
         "eslint-plugin-react-hooks": "^5.2.0",
         "eslint-plugin-react-refresh": "^0.4.19",
         "globals": "^16.0.0",
+        "terser": "^5.28.1",
         "typescript": "~5.7.2",
         "typescript-eslint": "^8.26.1",
-        "vite": "^6.3.1",
-        "terser": "^5.28.1"
+        "vite": "^6.3.1"
     }
 }
-

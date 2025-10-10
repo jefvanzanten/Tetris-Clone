@@ -81,7 +81,12 @@ export const PhaserGame = forwardRef<IRefPhaserGame, IProps>(
 
         useEffect(() => {
             const handleStateChange = (state: GameState) => {
-                console.log("State change:", state, "Current scene:", currentScene);
+                console.log(
+                    "State change:",
+                    state,
+                    "Current scene:",
+                    currentScene
+                );
                 if (currentScene === "Game") {
                     setIsOpen(state === GameState.WAITING_TO_START);
                 }
@@ -96,7 +101,7 @@ export const PhaserGame = forwardRef<IRefPhaserGame, IProps>(
         return (
             <>
                 <StartDialog isOpen={isOpen} />
-                <div id="game-container"></div>;
+                <div id="game-container"></div>
             </>
         );
     }

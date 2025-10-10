@@ -19,7 +19,7 @@ const phasermsg = () => {
 };
 
 export default defineConfig({
-    base: "./Tetris-Clone/",
+    base: "/Tetris-Clone/",
     plugins: [react(), phasermsg()],
     logLevel: "warning",
     build: {

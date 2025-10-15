@@ -12,9 +12,9 @@ function StartDialog({ isOpen }: StartDialogProps) {
 
     const handlePlay = () => {
         console.log("Play clicked!");
-        const manager = GameManager.getInstance();
+        const manager = GameManager.Instance;
         console.log("Manager:", manager);
-        manager.setState(GameState.PLAYING);
+        manager.CurrentState = GameState.PLAYING;
         console.log("State set to PLAYING");
     };
 

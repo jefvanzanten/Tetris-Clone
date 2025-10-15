@@ -52,7 +52,7 @@ export const PhaserGame = forwardRef<IRefPhaserGame, IProps>(
                 setCurrentScene(sceneName);
 
                 if (sceneName === "Game") {
-                    const gameState = GameManager.getInstance().getState();
+                    const gameState = GameManager.Instance.CurrentState;
                     setIsOpen(gameState === GameState.WAITING_TO_START);
                 }
 

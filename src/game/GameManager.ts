@@ -15,18 +15,18 @@ class GameManager {
         this.currentState = GameState.WAITING_TO_START;
     }
 
-    public static getInstance(): GameManager {
+    public static get Instance(): GameManager {
         if (!GameManager.instance) {
             GameManager.instance = new GameManager();
         }
         return GameManager.instance;
     }
 
-    public getState(): GameState {
+    public get CurrentState(): GameState {
         return this.currentState;
     }
 
-    public setState(state: GameState): void {
+    public set CurrentState(state: GameState) {
         console.log("GameManager.setState called with:", state);
         this.currentState = state;
         console.log("Emitting game-state-changed event");
